@@ -1,11 +1,14 @@
 
 #To Do:
-#Get the PID of the NUIA process first
+
 #how can the samples be recorded...maybe record them in an array?
+#See difference between veritual memory and memo percent commands
 #at the get a summary of average CPU and memory usage
 #Check how to make non moving graph, also instaead of live graph would prefer a graph with the samples
-
+import sys
 import psutil
+import platform
+from cpuinfo import get_cpu_info
 import time
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
@@ -14,21 +17,43 @@ import matplotlib.animation as animation
 
 from matplotlib.animation import FuncAnimation
 from astropy.modeling.tests.test_model_sets import xx
+from numexpr.cpuinfo import cpuinfo
+#from dist.tempnew.gevent.libev.corecext import self
 
 arr=[];
 arr.append(1);
 print(arr)
 class processMonitor():
-    def __init__(self,pids):
-        self.cpu_nums=psutil.cpu_count();
-        self.memo=psutil.virtual_memory();
+    def __init__(self):
+        self.process_name="NUIA.exe"
+        self.processor_details={};#dictionary for storing proc info
         print("constructor called")
-        print("number of cpus = ")
-        print(self.cpu_nums)
-    def system_info(self):
+       # print(self.cpu_nums)
+        #print()   
+    def find_procs_by_name(self):
+    #"Return a list of processes matching 'name'."
+        ls = []
+   
+        x=psutil.process_iter(['self.process_name'])
+        print('x is **')
+        print((x))
+        for p in psutil.process_iter(['name']):
+    #         print('p is ')
+    #         print(p)
+            if p.info['name'] == self.process_name:
+                ls.append(p)
+        self.pid=ls[0].pid
+    
+    def processor_info(self):
         #returns properties of cpu
-        print("32")
-       
+        print("***************** Processor info. **********    START")
+        self.processor_details['arch']=get_cpu_info()['arch'];
+        self.processor_details['logical_cores']=get_cpu_info()['count'];
+        self.processor_details['gen']=get_cpu_info()['brand'];
+        
+        print(self.processor_details)
+        print("****************Processor info. ***********    END")
+        
     def memo_util(self):  
         #return memo utilitzation
         print("rrs")
@@ -45,7 +70,13 @@ class processMonitor():
 #     print(psutil.getloadavg())
 #     print(psutil.cpu_percent(interval=1, percpu=False))
 #     t=t+1;
-x=processMonitor(111)
+x=processMonitor()
+x.processor_info()
+x.find_procs_by_name()
+print(x.pid)
+
+sys.exit()
+
 start_time=time.time()
 seconds=0;
 print("******************* Starting timer now for %d" % seconds+" seconds !*****************")
@@ -63,44 +94,6 @@ while True:
      
 #for Item in procCpuArr: print(Item.rjust(8), sep='/n')
 print(*procCpuArr, sep='\n')
-
-
-# START OF *********TEST WHY THIS AINT WORKING:
-def find_procs_by_pid(name):
-    "Return a list of processes matching 'name'."
-    ls = []
-   
-    x=psutil.process_iter(['name'])
-    print('x is **')
-    print((x))
-    for p in psutil.process_iter(['name']):
-#         print('p is ')
-#         print(p)
-        if p.info['name'] == name:
-            ls.append(p)
-    return ls[0].pid
-
-procId=find_procs_by_pid("NUIA.exe")
-print("****printing chrome")
-print(procId) #To get pid of the process you should do this
-print("*****printing chrome")
-
-print("Overall CPU consumption: ")
-print(psutil.cpu_percent(interval=1,percpu=True))
-
-#Testing individual process loads/memo loads
-p = psutil.Process(procId)
-print("NUIA CPU consumption: ")
-print(p.cpu_percent(interval=None))
-print(p.memory_info())
-tt=psutil.Process();
-print("cpu % test = ")
-print(psutil.cpu_percent(interval=1,percpu=False))
-print(p.cpu_percent(interval=None))
-print(p.cpu_percent(interval=1))
-print(p.cpu_percent(interval=1))
-
-# END OF *********TEST WHY THIS AINT WORKING:
 
 
 # print(psutil.process_iter(attrs, ad_value))
@@ -136,7 +129,6 @@ def GetProcessList():
                 tmp['io_write_bytes'] = pio.write_bytes            
                 tmp['io_read_bytes'] = pio.read_bytes              
                 tmp['threads'] = p.num_threads()                    
-               
                 processList.append(tmp);
                 del(p)
                 del(tmp)
@@ -149,10 +141,3 @@ def GetProcessList():
    
 #x=GetProcessList()
 #print(x)
-print("Inside loop, printing CPU load now ")
-for i in range(10):
-    p = psutil.Process(procId)
-    print (p.cpu_percent(interval=1) / psutil.cpu_count())
-print("Ending now!!! ")
-
-
