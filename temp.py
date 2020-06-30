@@ -24,12 +24,15 @@ arr=[];
 arr.append(1);
 print(arr)
 class processMonitor():
-    def __init__(self):
-        self.process_name="NUIA.exe"
+    def __init__(self,procName=None): #constructor with default values
+        if procName is None: 
+            self.process_name="NUIA.exe"
+        else: self.process_name=procName
         self.processor_details={};#dictionary for storing proc info
         print("constructor called")
        # print(self.cpu_nums)
         #print()   
+
     def find_procs_by_name(self):
     #"Return a list of processes matching 'name'."
         ls = []
@@ -75,7 +78,7 @@ x.processor_info()
 x.find_procs_by_name()
 print(x.pid)
 
-sys.exit()
+#sys.exit()
 
 start_time=time.time()
 seconds=0;
