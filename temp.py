@@ -5,7 +5,10 @@
 #See difference between veritual memory and memo percent commands
 #at the get a summary of average CPU and memory usage
 #Check how to make non moving graph, also instaead of live graph would prefer a graph with the samples
-import sys
+
+#Bugs
+#If NUIA ain't open you'll get an error in 
+import sys,signal
 import psutil
 import platform
 from cpuinfo import get_cpu_info
@@ -18,6 +21,7 @@ import matplotlib.animation as animation
 from matplotlib.animation import FuncAnimation
 from astropy.modeling.tests.test_model_sets import xx
 from numexpr.cpuinfo import cpuinfo
+from sympy.physics.mechanics.tests.test_system import Pa
 #from dist.tempnew.gevent.libev.corecext import self
 
 arr=[];
@@ -45,7 +49,11 @@ class processMonitor():
     #         print(p)
             if p.info['name'] == self.process_name:
                 ls.append(p)
-        self.pid=ls[0].pid
+                
+        try: self.pid=ls[0].pid
+        except:
+             print(' NUIA is not running, start NUIA')
+             sys.exit()
     
     def processor_info(self):
         #returns properties of cpu
@@ -62,7 +70,41 @@ class processMonitor():
         print("rrs")
        
        
-       
+def getCpuLoad(procObj): #overall cpu load
+    start_time=time.time()
+    seconds=11;
+    print("******************* Starting timer now for %d" % seconds+" seconds !*****************")
+    procCpuArr=[]
+    totCpuArr=[]
+    memArr=[]
+    
+        
+    try:
+        while True:
+            current_time = time.time()
+            elapsed_time = current_time - start_time
+            print(psutil.cpu_percent(interval=1,percpu=False))
+            procCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
+#             if elapsed_time > seconds:
+#                 print("Finished iterating in: " + str(int(elapsed_time))  + " seconds")
+#                 break    
+    except  KeyboardInterrupt: #see why this aint working
+          pass
+ 
+    #for Item in procCpuArr: print(Item.rjust(8), sep='/n')
+    print(*procCpuArr, sep='\n')
+
+
+    return procObj.pid
+
+def getMemoLoad(procObj): #overall memo load
+    
+    return procObj.pid 
+
+def getProcessCpuLoad(procObj): #
+    return 1
+def getProcessMemoLoad(procObj):      
+    return 1;
 # class graphGen():
 #         def __init__(self):
            
@@ -78,25 +120,10 @@ x.processor_info()
 x.find_procs_by_name()
 print(x.pid)
 
-#sys.exit()
+t=getCpuLoad(x)
+print(t)
+sys.exit()
 
-start_time=time.time()
-seconds=0;
-print("******************* Starting timer now for %d" % seconds+" seconds !*****************")
-procCpuArr=[]
-totCpuArr=[]
-memArr=[]
-while True:
-    current_time = time.time()
-    elapsed_time = current_time - start_time
-    print(psutil.cpu_percent(interval=1,percpu=False))
-    procCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
-    if elapsed_time > seconds:
-        print("Finished iterating in: " + str(int(elapsed_time))  + " seconds")
-        break    
-     
-#for Item in procCpuArr: print(Item.rjust(8), sep='/n')
-print(*procCpuArr, sep='\n')
 
 
 # print(psutil.process_iter(attrs, ad_value))
