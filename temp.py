@@ -8,7 +8,10 @@
 
 #Bugs
 #If NUIA ain't open you'll get an error in 
-import sys,signal
+import sys
+import signal
+import keyboard
+
 import psutil
 import platform
 from cpuinfo import get_cpu_info
@@ -69,44 +72,58 @@ class processMonitor():
         #return memo utilitzation
         print("rrs")
        
-       
-def getCpuLoad(procObj): #overall cpu load
-    start_time=time.time()
-    seconds=11;
-    print("******************* Starting timer now for %d" % seconds+" seconds !*****************")
-    procCpuArr=[]
-    totCpuArr=[]
-    memArr=[]
-    
+
+class loadStats():    
+    def __init__(self,procObj):
+        self.overallMemo=[];
+        self.overallCpu=[];
+        self.procCpu=[];
+        self.procMemo=[];
+        print("LoadStats constructor")   
+    def getOverallCpuLoad(self,procObj): #overall cpu load
+        p = psutil.Process(procObj.pid);
         
-    try:
+        start_time=time.time()
+        seconds=11;
+        print("******************* Starting timer now for %d" % seconds+" seconds !, Press q to Exit *****************")
+        procCpuArr=[]
+        totCpuArr=[]
+        memArr=[]
         while True:
-            current_time = time.time()
-            elapsed_time = current_time - start_time
-            print(psutil.cpu_percent(interval=1,percpu=False))
-            procCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
-#             if elapsed_time > seconds:
-#                 print("Finished iterating in: " + str(int(elapsed_time))  + " seconds")
-#                 break    
-    except  KeyboardInterrupt: #see why this aint working
-          pass
- 
-    #for Item in procCpuArr: print(Item.rjust(8), sep='/n')
-    print(*procCpuArr, sep='\n')
-
-
-    return procObj.pid
-
-def getMemoLoad(procObj): #overall memo load
     
-    return procObj.pid 
+            try:
+                if keyboard.is_pressed('q'):  # if key 'q' is pressed 
+                   raise KeyboardInterrupt
+                current_time = time.time()
+                elapsed_time = current_time - start_time
+    #             print(psutil.cpu_percent(interval=1,percpu=False))
+                totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
+                procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
 
-def getProcessCpuLoad(procObj): #
-    return 1
-def getProcessMemoLoad(procObj):      
-    return 1;
-# class graphGen():
-#         def __init__(self):
+        #             if elapsed_time > seconds:
+        
+            #                 print("Finished iterating in: " + str(int(elapsed_time))  + " seconds")
+            #                 break    
+            except KeyboardInterrupt:
+                print('Exitting Program Now !!')
+                break;
+    #         raise KeyboardInterrupt 
+    #        print("keyboard CAUGHT!!!")
+        #for Item in procCpuArr: print(Item.rjust(8), sep='/n')
+        
+        self.procCpu=procCpuArr    
+        self.overallCpu=totCpuArr
+        return self
+    
+#     def getOverallMemoLoad(procObj): #overall memo load
+#         
+#         return procObj.pid 
+#     def getProcessCpuLoad(procObj): #
+#         return 1
+#     def getProcessMemoLoad(procObj):      
+#         return 1;
+    # class graphGen():
+    #         def __init__(self):
            
        
 #x=processMonitor(122)      
@@ -120,8 +137,12 @@ x.processor_info()
 x.find_procs_by_name()
 print(x.pid)
 
-t=getCpuLoad(x)
-print(t)
+y=loadStats(x);
+z=y.getOverallCpuLoad(x)
+print(z.procCpu);
+print(z.overallCpu);
+# t=getOverallCpuLoad(x)
+# print(t)
 sys.exit()
 
 
