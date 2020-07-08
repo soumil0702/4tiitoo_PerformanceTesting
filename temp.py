@@ -192,3 +192,7 @@ def GetProcessList():
    
 #x=GetProcessList()
 #print(x)
+
+def generateGraph(loadStatObj): #generate graph from loadStatObj which has all the load stats
+    
+    return 999
