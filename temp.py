@@ -109,7 +109,7 @@ class loadStats():
             except KeyboardInterrupt:
                 print('Exitting Program Now !!')
                 break;
-            except:
+            except: #catchall exception
                 print("Program not running anymore or exitted prematurely ! ")
                 break;
     #         raise KeyboardInterrupt 
