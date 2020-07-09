@@ -65,7 +65,8 @@ class processMonitor():
         self.processor_details['arch']=get_cpu_info()['arch'];
         self.processor_details['logical_cores']=get_cpu_info()['count'];
         self.processor_details['gen']=get_cpu_info()['brand'];
-        
+        for key, value in get_cpu_info().items():
+            print("{0}: {1}".format(key, value))
         print(self.processor_details)
         print("****************Processor info. ***********    END")
         
@@ -202,10 +203,11 @@ def GetProcessList():
 #x=GetProcessList()
 #print(x)
 
-def generateGraph(loadStatObj): #generate graph from loadStatObj which has all the load stats
+class generateGraph(): #generate graph from loadStatObj which has all the load stats, refer to the tanzeel bhatti docu
+    def __init__(self,loadStatObj):
+        return 1
+        
     
-    return 999
-
 def generateReport(loadStatObj):# generate report of loadstats of the machine, give a rating at the end
     
     return 999 # return a beautified load table with overall and proc. loads
