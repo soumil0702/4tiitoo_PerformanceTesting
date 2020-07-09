@@ -25,6 +25,7 @@ from matplotlib.animation import FuncAnimation
 from astropy.modeling.tests.test_model_sets import xx
 from numexpr.cpuinfo import cpuinfo
 from sympy.physics.mechanics.tests.test_system import Pa
+from sqlalchemy.sql.expression import except_
 #from dist.tempnew.gevent.libev.corecext import self
 
 arr=[];
@@ -97,15 +98,19 @@ class loadStats():
                 current_time = time.time()
                 elapsed_time = current_time - start_time
     #             print(psutil.cpu_percent(interval=1,percpu=False))
-                totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
                 procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
-
-        #             if elapsed_time > seconds:
+                totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
+                
+                #             if elapsed_time > seconds:
         
             #                 print("Finished iterating in: " + str(int(elapsed_time))  + " seconds")
             #                 break    
+
             except KeyboardInterrupt:
                 print('Exitting Program Now !!')
+                break;
+            except:
+                print("Program not running anymore or exitted prematurely ! ")
                 break;
     #         raise KeyboardInterrupt 
     #        print("keyboard CAUGHT!!!")
@@ -139,8 +144,12 @@ print(x.pid)
 
 y=loadStats(x);
 z=y.getOverallCpuLoad(x)
-print(z.procCpu);
 print(z.overallCpu);
+print(z.procCpu);
+
+print("Length of overall cpu load = %d "%len(z.overallCpu)) 
+print("Length of process cpu load = %d "%len(z.procCpu)) 
+
 # t=getOverallCpuLoad(x)
 # print(t)
 sys.exit()
@@ -196,3 +205,7 @@ def GetProcessList():
 def generateGraph(loadStatObj): #generate graph from loadStatObj which has all the load stats
     
     return 999
+
+def generateReport(loadStatObj):# generate report of loadstats of the machine, give a rating at the end
+    
+    return 999 # return a beautified load table with overall and proc. loads
