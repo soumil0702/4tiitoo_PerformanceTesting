@@ -13,6 +13,8 @@ import signal
 import keyboard
 
 import psutil
+from psutil._common import bytes2human
+
 import platform
 from cpuinfo import get_cpu_info
 import time
@@ -31,6 +33,14 @@ from sqlalchemy.sql.expression import except_
 arr=[];
 arr.append(1);
 print(arr)
+
+def pprint_ntuple(nt):
+    for name in nt._fields:
+        value = getattr(nt, name)
+        if name != 'percent':
+            value = bytes2human(value)
+        print('%-10s : %7s' % (name.capitalize(), value))    
+        
 class processMonitor():
     def __init__(self,procName=None): #constructor with default values
         if procName is None: 
@@ -90,7 +100,9 @@ class loadStats():
         print("******************* Starting timer now for %d" % seconds+" seconds !, Press q to Exit *****************")
         procCpuArr=[]
         totCpuArr=[]
-        memArr=[]
+        procMemArr=[]
+        totMemArr=[]
+        
         while True:
     
             try:
@@ -101,7 +113,10 @@ class loadStats():
     #             print(psutil.cpu_percent(interval=1,percpu=False))
                 procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
                 totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
-                
+                procMemArr.append((p.memory_info().vms))
+                totMemArr.append(psutil.virtual_memory())
+                pprint_ntuple(p.memory_info())
+
                 #             if elapsed_time > seconds:
         
             #                 print("Finished iterating in: " + str(int(elapsed_time))  + " seconds")
@@ -119,6 +134,8 @@ class loadStats():
         
         self.procCpu=procCpuArr    
         self.overallCpu=totCpuArr
+        self.procMemo=procMemArr
+        self.overallMemo=totMemArr
         return self
     
 #     def getOverallMemoLoad(procObj): #overall memo load
@@ -131,7 +148,7 @@ class loadStats():
     # class graphGen():
     #         def __init__(self):
            
-       
+   
 #x=processMonitor(122)      
 # t=0;
 # while(t<5):
@@ -147,6 +164,10 @@ y=loadStats(x);
 z=y.getOverallCpuLoad(x)
 print(z.overallCpu);
 print(z.procCpu);
+#print(z.overallMemo);
+#print(z.procMemo)
+pprint_ntuple(psutil.virtual_memory())
+
 
 print("Length of overall cpu load = %d "%len(z.overallCpu)) 
 print("Length of process cpu load = %d "%len(z.procCpu)) 
