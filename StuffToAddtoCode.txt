@@ -1,0 +1,1 @@
+Maybe at the end of compiling average stats also add actual memo consumption from the percentage and to a bytes2Human
