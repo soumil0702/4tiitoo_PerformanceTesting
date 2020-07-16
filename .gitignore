@@ -1,5 +1,5 @@
 /build/
-/dist/
-/output/
 /temp.build/
 /tempnew.build/
+/__pycache__/
+/output/
