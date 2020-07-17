@@ -29,8 +29,8 @@ multiprocessing.freeze_support() #workaround because if you do a py to exe, this
 
 
 # from mpl_toolkits.mplot3d import Axes3D
-# import numpy as np
-# import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.pyplot as plt
 # import matplotlib.animation as animation
 # 
 # from matplotlib.animation import FuncAnimation
@@ -116,6 +116,7 @@ class loadStats():
         self.overallCpu=[];
         self.procCpu=[];
         self.procMemo=[];
+        
         print("LoadStats constructor")   
     def getOverallCpuLoad(self,procObj): #overall cpu load
         p = psutil.Process(procObj.pid);
@@ -127,7 +128,7 @@ class loadStats():
         totCpuArr=[]
         procMemArr=[]
         totMemArr=[]
-        
+        timeArr=[]
         while True:
     
             try:
@@ -136,8 +137,9 @@ class loadStats():
                 current_time = time.time()
                 elapsed_time = current_time - start_time
     #             print(psutil.cpu_percent(interval=1,percpu=False))
-                procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
-                totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
+                timeArr.append(time.time()-start_time)
+                procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
+                totCpuArr.append(psutil.cpu_percent(interval=0.5,percpu=False))
 #                procMemArr.append((p.memory_info().rss))
                 procMemArr.append(p.memory_percent(memtype='rss'))
 
@@ -164,6 +166,7 @@ class loadStats():
         self.overallCpu=totCpuArr
         self.procMemo=procMemArr
         self.overallMemo=totMemArr
+        self.timeArr=timeArr
         return self
     
 #     def getOverallMemoLoad(procObj): #overall memo load
@@ -177,12 +180,6 @@ class loadStats():
     #         def __init__(self):
            
    
-#x=processMonitor(122)      
-# t=0;
-# while(t<5):
-#     print(psutil.getloadavg())
-#     print(psutil.cpu_percent(interval=1, percpu=False))
-#     t=t+1;
 x=processMonitor('NUIA.exe')
 x.processor_info() #this line causes problems while converint to exe for some reason
 x.find_procs_by_name()
@@ -194,15 +191,29 @@ print(z.overallCpu);
 print(z.procCpu);
 print(z.overallMemo);
 print(z.procMemo)
+print(z.timeArr)
 pprint_ntuple(psutil.virtual_memory())
 
 
 print("Length of overall cpu load = %d "%len(z.overallCpu)) 
 print("Length of process cpu load = %d "%len(z.procCpu)) 
+print("Length of overall memo load = %d "%len(z.overallMemo)) 
+print("Length of process memo load = %d "%len(z.procMemo)) 
+print("Length of time array = %d "%len(z.timeArr)) 
 
 # t=getOverallCpuLoad(x)
 # print(t)
+
+
+input("Press ENTER to show GRAPH !")
+plt.style.use('seaborn-whitegrid')
+
+plt.scatter(z.timeArr, z.overallCpu, marker='o');
+plt.scatter(z.timeArr, z.procCpu, marker='o');
+plt.show()
+plt.close('all')
 input("Press ENTER to exit !")
+
 # sys.stdout.close()
 
 

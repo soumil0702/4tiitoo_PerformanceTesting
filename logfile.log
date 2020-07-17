@@ -68,4 +68,2430 @@ Used       :    8.5G
 Free       :    7.3G
 Length of overall cpu load = 2 
 Length of process cpu load = 2 
-Press ENTER to exit !
+Press ENTER to exit !constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x0000012B92058848>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x00000214CC068848>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  289.1M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1001.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Rss        :  289.4M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Rss        :  289.4M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Rss        :  289.4M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Rss        :  289.4M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Rss        :  289.4M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Rss        :  289.4M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Rss        :  289.4M
+Vms        :  428.6M
+Num_page_faults :    1.7M
+Peak_wset  :  371.7M
+Wset       :  289.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.3K
+Pagefile   :  428.6M
+Peak_pagefile :  461.6M
+Private    :  428.6M
+
+
+Exitting Program Now !!
+[10.1, 5.4, 7.0, 7.6, 7.6, 6.1, 5.9, 9.0]
+[1.175, 0.975, 1.175, 0.5875, 0.975, 0.775, 1.3625, 0.775]
+[49.9, 49.9, 49.9, 49.9, 50.0, 50.0, 49.9, 49.9]
+[1.777184214481888, 1.7787689708544094, 1.7787689708544094, 1.7787689708544094, 1.778792982314599, 1.778792982314599, 1.778792982314599, 1.778792982314599]
+[1595001049.3787324, 1595001051.3796124, 1595001053.3800237, 1595001055.3815386, 1595001057.3826003, 1595001059.3835554, 1595001061.3851905, 1595001063.3852162]
+Total      :   15.9G
+Available  :    8.0G
+Percent    :    49.9
+Used       :    7.9G
+Free       :    8.0G
+Length of overall cpu load = 8 
+Length of process cpu load = 8 
+Press ENTER to exit !constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x0000026F27229848>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  297.0M
+Vms        :  435.9M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.0M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.7K
+Pagefile   :  435.9M
+Peak_pagefile :  470.3M
+Private    :  435.9M
+
+
+Rss        :  297.0M
+Vms        :  435.9M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.0M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.7K
+Pagefile   :  435.9M
+Peak_pagefile :  470.3M
+Private    :  435.9M
+
+
+Rss        :  297.0M
+Vms        :  435.9M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.0M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.7K
+Pagefile   :  435.9M
+Peak_pagefile :  470.3M
+Private    :  435.9M
+
+
+Rss        :  297.0M
+Vms        :  435.9M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.0M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.7K
+Pagefile   :  435.9M
+Peak_pagefile :  470.3M
+Private    :  435.9M
+
+
+Rss        :  297.0M
+Vms        :  435.9M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.0M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.7K
+Pagefile   :  435.9M
+Peak_pagefile :  470.3M
+Private    :  435.9M
+
+
+Rss        :  297.1M
+Vms        :  435.4M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.7K
+Pagefile   :  435.4M
+Peak_pagefile :  470.3M
+Private    :  435.4M
+
+
+Rss        :  297.1M
+Vms        :  435.5M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.9K
+Pagefile   :  435.5M
+Peak_pagefile :  470.3M
+Private    :  435.5M
+
+
+Rss        :  297.1M
+Vms        :  435.3M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1000.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  228.6K
+Pagefile   :  435.3M
+Peak_pagefile :  470.3M
+Private    :  435.3M
+
+
+Exitting Program Now !!
+[11.7, 9.9, 6.0, 14.7, 6.6, 7.2, 9.7, 12.9]
+[0.975, 0.975, 0.775, 1.5625, 2.15, 0.5875, 1.175, 0.5875]
+[51.2, 51.2, 51.2, 51.1, 51.1, 51.0, 51.1, 51.1]
+[1.825447249463224, 1.8254712609234134, 1.8254712609234134, 1.825423238003034, 1.825447249463224, 1.8263116620300537, 1.8264797422513819, 1.8260715474281566]
+[0.19654512405395508, 2.197178602218628, 4.198164939880371, 6.1992199420928955, 8.199784755706787, 10.200891256332397, 12.202095031738281, 14.203223466873169]
+Total      :   15.9G
+Available  :    7.8G
+Percent    :    51.1
+Used       :    8.1G
+Free       :    7.8G
+Length of overall cpu load = 8 
+Length of process cpu load = 8 
+Press ENTER to exit !constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x000001CAE4669848>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.0M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.0M
+Peak_pagefile :  470.3M
+Private    :  457.0M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1003.4K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8M
+Peak_wset  :  371.7M
+Wset       :  297.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  457.1M
+Peak_pagefile :  470.3M
+Private    :  457.1M
+
+
+Rss        :  297.9M
+Vms        :  457.1M
+Num_page_faults :    1.8Mconstructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x000002202C948848>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  292.2M
+Vms        :  460.6M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  460.6M
+Peak_pagefile :  474.6M
+Private    :  460.6M
+
+
+Rss        :  292.2M
+Vms        :  460.6M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.6K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  460.6M
+Peak_pagefile :  474.6M
+Private    :  460.6M
+
+
+Rss        :  293.1M
+Vms        :  460.7M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  293.1M
+Peak_paged_pool :    1.0M
+Paged_pool :    1.0M
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.5K
+Pagefile   :  460.7M
+Peak_pagefile :  474.6M
+Private    :  460.7M
+
+
+Rss        :  293.1M
+Vms        :  460.7M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  293.1M
+Peak_paged_pool :    1.0M
+Paged_pool :    1.0M
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.5K
+Pagefile   :  460.7M
+Peak_pagefile :  474.6M
+Private    :  460.7M
+
+
+Rss        :  292.2M
+Vms        :  460.6M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  460.6M
+Peak_pagefile :  474.6M
+Private    :  460.6M
+
+
+Rss        :  292.2M
+Vms        :  448.3M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  230.6K
+Pagefile   :  448.3M
+Peak_pagefile :  474.6M
+Private    :  448.3M
+
+
+Rss        :  292.2M
+Vms        :  448.3M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  230.6K
+Pagefile   :  448.3M
+Peak_pagefile :  474.6M
+Private    :  448.3M
+
+
+Exitting Program Now !!
+[7.0, 15.1, 9.0, 15.1, 12.5, 27.3, 13.7]
+[3.9, 6.25, 1.5625, 0.0, 0.0, 1.95, 0.3875]
+[50.4, 50.3, 50.3, 50.3, 50.3, 50.3, 50.3]
+[1.7958651305094897, 1.7958891419696792, 1.8014838121938839, 1.8014838121938839, 1.7959851878104383, 1.7959851878104383, 1.7959851878104383]
+[0.15291810035705566, 1.1531338691711426, 2.1541106700897217, 3.1559078693389893, 4.156051397323608, 5.156968832015991, 6.1581268310546875]
+Total      :   15.9G
+Available  :    7.9G
+Percent    :    50.3
+Used       :    8.0G
+Free       :    7.9G
+Length of overall cpu load = 7 
+Length of process cpu load = 7 
+Length of overall memo load = 7 
+Length of process memo load = 7 
+Length of time array = 7 
+Press ENTER to exit !constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x0000021F0E9B88C8>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  292.9M
+Vms        :  440.5M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  230.1K
+Pagefile   :  440.5M
+Peak_pagefile :  476.1M
+Private    :  440.5M
+
+
+Rss        :  292.9M
+Vms        :  440.5M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  230.1K
+Pagefile   :  440.5M
+Peak_pagefile :  476.1M
+Private    :  440.5M
+
+
+Rss        :  292.9M
+Vms        :  440.5M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  230.1K
+Pagefile   :  440.5M
+Peak_pagefile :  476.1M
+Private    :  440.5M
+
+
+Rss        :  292.9M
+Vms        :  440.5M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  292.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  230.1K
+Pagefile   :  440.5M
+Peak_pagefile :  476.1M
+Private    :  440.5M
+
+
+Exitting Program Now !!
+[10.1, 9.3, 7.2, 8.9]
+[0.775, 0.0, 0.7625, 0.3875]
+[49.1, 49.2, 49.1, 49.1]
+[1.800523353786295, 1.800523353786295, 1.800523353786295, 1.800523353786295]
+[0.15364313125610352, 1.1540191173553467, 2.1551852226257324, 3.1566359996795654]
+Total      :   15.9G
+Available  :    8.1G
+Percent    :    49.1
+Used       :    7.8G
+Free       :    8.1G
+Length of overall cpu load = 4 
+Length of process cpu load = 4 
+Length of overall memo load = 4 
+Length of process memo load = 4 
+Length of time array = 4 
+Press ENTER to exit !constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x0000017033B63648>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  293.2M
+Vms        :  440.7M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  293.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.2K
+Pagefile   :  440.7M
+Peak_pagefile :  476.1M
+Private    :  440.7M
+
+
+Rss        :  293.2M
+Vms        :  440.7M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  293.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.2K
+Pagefile   :  440.7M
+Peak_pagefile :  476.1M
+Private    :  440.7M
+
+
+Rss        :  294.8M
+Vms        :  440.7M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  294.8M
+Peak_paged_pool :    1.0M
+Paged_pool :    1.0M
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.4K
+Pagefile   :  440.7M
+Peak_pagefile :  476.1M
+Private    :  440.7M
+
+
+Rss        :  293.2M
+Vms        :  440.7M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  293.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.2K
+Pagefile   :  440.7M
+Peak_pagefile :  476.1M
+Private    :  440.7M
+
+
+Rss        :  293.2M
+Vms        :  440.7M
+Num_page_faults :    1.9M
+Peak_wset  :  371.7M
+Wset       :  293.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.2K
+Pagefile   :  440.7M
+Peak_pagefile :  476.1M
+Private    :  440.7M
+
+
+Exitting Program Now !!
+[5.1, 4.3, 7.1, 5.1, 6.6]
+[1.175, 0.0, 0.0, 0.775, 0.3875]
+[49.4, 49.4, 49.3, 49.3, 49.4]
+[1.8023002018403345, 1.8023002018403345, 1.8118087400754632, 1.8023482247607137, 1.8023722362209036]
+[0.1564939022064209, 1.1628615856170654, 2.171269178390503, 3.178163766860962, 4.184884071350098]
+Total      :   15.9G
+Available  :    8.0G
+Percent    :    49.4
+Used       :    7.8G
+Free       :    8.0G
+Length of overall cpu load = 5 
+Length of process cpu load = 5 
+Length of overall memo load = 5 
+Length of process memo load = 5 
+Length of time array = 5 
+Press ENTER to exit !constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x0000022DEA678848>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  302.5M
+Vms        :  450.2M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.5M
+Peak_paged_pool :    1.0M
+Paged_pool : 1007.8K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  450.2M
+Peak_pagefile :  476.1M
+Private    :  450.2M
+
+
+Rss        :  302.5M
+Vms        :  449.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.5M
+Peak_paged_pool :    1.0M
+Paged_pool : 1013.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.2K
+Pagefile   :  449.7M
+Peak_pagefile :  476.1M
+Private    :  449.7M
+
+
+Rss        :  302.6M
+Vms        :  470.4M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1013.4K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  470.4M
+Peak_pagefile :  476.1M
+Private    :  470.4M
+
+
+Rss        :  302.6M
+Vms        :  470.2M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.6K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  470.2M
+Peak_pagefile :  476.1M
+Private    :  470.2M
+
+
+Rss        :  302.6M
+Vms        :  470.2M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  236.2K
+Pagefile   :  470.2M
+Peak_pagefile :  484.2M
+Private    :  470.2M
+
+
+Rss        :  302.6M
+Vms        :  470.4M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1005.4K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  236.2K
+Pagefile   :  470.4M
+Peak_pagefile :  484.2M
+Private    :  470.4M
+
+
+Rss        :  303.6M
+Vms        :  449.8M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  303.6M
+Peak_paged_pool :    1.0M
+Paged_pool :    1.0M
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.1K
+Pagefile   :  449.8M
+Peak_pagefile :  484.2M
+Private    :  449.8M
+
+
+Rss        :  302.9M
+Vms        :  458.3M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1003.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.5K
+Pagefile   :  458.3M
+Peak_pagefile :  484.2M
+Private    :  458.3M
+
+
+Rss        :  302.9M
+Vms        :  470.5M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.6K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.8K
+Pagefile   :  470.5M
+Peak_pagefile :  484.6M
+Private    :  470.5M
+
+
+Rss        :  302.9M
+Vms        :  470.5M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.8K
+Pagefile   :  470.5M
+Peak_pagefile :  484.6M
+Private    :  470.5M
+
+
+Rss        :  302.9M
+Vms        :  470.5M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.9M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.8K
+Pagefile   :  470.5M
+Peak_pagefile :  484.6M
+Private    :  470.5M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.8M
+Vms        :  458.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.8M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.0K
+Pagefile   :  458.1M
+Peak_pagefile :  484.6M
+Private    :  458.1M
+
+
+Rss        :  302.2M
+Vms        :  457.4M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.2K
+Pagefile   :  457.4M
+Peak_pagefile :  484.6M
+Private    :  457.4M
+
+
+Rss        :  302.2M
+Vms        :  457.4M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.2M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.2K
+Pagefile   :  457.4M
+Peak_pagefile :  484.6M
+Private    :  457.4M
+
+
+Rss        :  302.2M
+Vms        :  457.4M
+Num_page_faults :    2.0Mconstructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x000001A4877B88C8>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  302.1M
+Vms        :  449.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  449.1M
+Peak_pagefile :  484.6M
+Private    :  449.1M
+
+
+Rss        :  302.1M
+Vms        :  449.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  449.1M
+Peak_pagefile :  484.6M
+Private    :  449.1M
+
+
+Rss        :  302.1M
+Vms        :  449.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  449.1M
+Peak_pagefile :  484.6M
+Private    :  449.1M
+
+
+Rss        :  302.1M
+Vms        :  449.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  449.1M
+Peak_pagefile :  484.6M
+Private    :  449.1M
+
+
+Rss        :  302.1M
+Vms        :  449.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.1M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.4K
+Pagefile   :  449.1M
+Peak_pagefile :  484.6M
+Private    :  449.1M
+
+
+Rss        :  302.0M
+Vms        :  449.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.0M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.5K
+Pagefile   :  449.1M
+Peak_pagefile :  484.6M
+Private    :  449.1M
+
+
+Rss        :  302.4M
+Vms        :  449.6M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.5K
+Pagefile   :  449.6M
+Peak_pagefile :  484.6M
+Private    :  449.6M
+
+
+Rss        :  302.4M
+Vms        :  449.6M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.5K
+Pagefile   :  449.6M
+Peak_pagefile :  484.6M
+Private    :  449.6M
+
+
+Rss        :  302.4M
+Vms        :  449.6M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1003.1K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.6K
+Pagefile   :  449.6M
+Peak_pagefile :  484.6M
+Private    :  449.6M
+
+
+Rss        :  302.4M
+Vms        :  449.6M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.5K
+Pagefile   :  449.6M
+Peak_pagefile :  484.6M
+Private    :  449.6M
+
+
+Rss        :  304.2M
+Vms        :  449.6M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  304.2M
+Peak_paged_pool :    1.0M
+Paged_pool :    1.0M
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.6K
+Pagefile   :  449.6M
+Peak_pagefile :  484.6M
+Private    :  449.6M
+
+
+Rss        :  302.4M
+Vms        :  449.6M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1010.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.6K
+Pagefile   :  449.6M
+Peak_pagefile :  484.6M
+Private    :  449.6M
+
+
+Rss        :  303.7M
+Vms        :  449.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  303.7M
+Peak_paged_pool :    1.0M
+Paged_pool :    1.0M
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.8K
+Pagefile   :  449.7M
+Peak_pagefile :  484.6M
+Private    :  449.7M
+
+
+Rss        :  302.5M
+Vms        :  449.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.5M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.8K
+Pagefile   :  449.7M
+Peak_pagefile :  484.6M
+Private    :  449.7M
+
+
+Rss        :  302.7M
+Vms        :  450.1M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  302.7M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  231.8K
+Pagefile   :  450.1M
+Peak_pagefile :  484.6M
+Private    :  450.1M
+
+
+Rss        :  305.3M
+Vms        :  473.0M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.6K
+Pagefile   :  473.0M
+Peak_pagefile :  484.6M
+Private    :  473.0M
+
+
+Rss        :  305.3M
+Vms        :  473.0M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.5K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.6K
+Pagefile   :  473.0M
+Peak_pagefile :  484.6M
+Private    :  473.0M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.6K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.6K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.3M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.3M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  306.2M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  306.2M
+Peak_paged_pool :    1.0M
+Paged_pool :    1.0M
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.7K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1010.7K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  232.8K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.4M
+Vms        :  460.7M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.4M
+Peak_paged_pool :    1.0M
+Paged_pool : 1010.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.2K
+Pagefile   :  460.7M
+Peak_pagefile :  484.6M
+Private    :  460.7M
+
+
+Rss        :  305.5M
+Vms        :  460.8M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.5M
+Peak_paged_pool :    1.0M
+Paged_pool : 1003.9K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.4K
+Pagefile   :  460.8M
+Peak_pagefile :  484.6M
+Private    :  460.8M
+
+
+Rss        :  305.5M
+Vms        :  460.8M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.5M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.1K
+Pagefile   :  460.8M
+Peak_pagefile :  484.6M
+Private    :  460.8M
+
+
+Rss        :  305.5M
+Vms        :  460.8M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.5M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.1K
+Pagefile   :  460.8M
+Peak_pagefile :  484.6M
+Private    :  460.8M
+
+
+Rss        :  305.5M
+Vms        :  460.8M
+Num_page_faults :    2.0M
+Peak_wset  :  371.7M
+Wset       :  305.5M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.2K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.1K
+Pagefile   :  460.8M
+Peak_pagefile :  484.6M
+Private    :  460.8M
+
+
+Exitting Program Now !!
+[8.1, 4.3, 3.9, 3.9, 3.9, 25.2, 90.1, 43.8, 12.5, 7.5, 11.9, 47.7, 18.7, 10.9, 14.8, 36.0, 15.2, 12.2, 7.5, 5.1, 5.9, 6.2, 7.4, 5.9, 5.4, 5.1, 7.8, 6.2, 5.5, 4.3, 6.6, 6.6, 8.2, 5.1, 8.7, 9.7, 8.9, 15.1, 14.7, 20.9, 57.0, 17.4, 8.0, 7.5]
+[0.3875, 0.775, 0.3875, 0.0, 0.3875, 0.0, 1.175, 2.35, 2.7375, 2.35, 0.775, 3.125, 1.5625, 2.7375, 2.7375, 6.6375, 1.5625, 7.2, 0.775, 0.775, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.775, 0.3875, 1.175, 0.0, 0.0, 0.0, 0.3875, 1.175, 2.7375, 1.175, 1.175, 3.125, 1.175, 1.95, 3.5125, 5.075, 1.5625, 1.175]
+[51.2, 51.2, 51.2, 49.5, 49.5, 50.2, 50.5, 50.6, 50.6, 50.6, 50.6, 50.9, 51.0, 50.8, 50.6, 50.5, 50.4, 50.5, 50.5, 50.5, 50.5, 50.5, 50.5, 50.5, 50.5, 50.5, 50.5, 50.3, 50.3, 50.3, 50.3, 50.3, 50.3, 50.3, 50.3, 50.3, 50.3, 50.5, 50.5, 50.5, 50.8, 50.8, 50.6, 50.6]
+[1.8571663883738432, 1.8571663883738432, 1.8571663883738432, 1.8571663883738432, 1.8571663883738432, 1.8564220331079617, 1.8588471905871233, 1.858895213507503, 1.858895213507503, 1.858895213507503, 1.8701805997966712, 1.8590873051890204, 1.866578880768213, 1.8592073624899692, 1.8607921188624907, 1.8769038086497924, 1.8769038086497924, 1.8768077628090334, 1.8768317742692233, 1.876855785729413, 1.876855785729413, 1.876855785729413, 1.876855785729413, 1.876855785729413, 1.876855785729413, 1.876855785729413, 1.8768797971896025, 1.8824264444934278, 1.8769758430303616, 1.8770478774109307, 1.8770718888711204, 1.8770718888711204, 1.8770718888711204, 1.8770718888711204, 1.8770718888711204, 1.8770718888711204, 1.8771199117915, 1.8771439232516896, 1.877167934711879, 1.8772639805526383, 1.877864267057381, 1.8779363014379502, 1.8779603128981401, 1.8779603128981401]
+[0.13991641998291016, 1.1402356624603271, 2.1411426067352295, 3.1420674324035645, 4.142975568771362, 5.143289566040039, 6.144913673400879, 7.154326438903809, 8.155431747436523, 9.157135009765625, 10.158137559890747, 11.158164024353027, 12.159786939620972, 13.160870790481567, 14.161182165145874, 15.16277527809143, 16.164079904556274, 17.164966583251953, 18.16584038734436, 19.166170597076416, 20.167571306228638, 21.168039083480835, 22.16919445991516, 23.170352935791016, 24.171351194381714, 25.171992540359497, 26.17297625541687, 27.1735258102417, 28.17407488822937, 29.175867557525635, 30.17701768875122, 31.177589893341064, 32.17821025848389, 33.17927694320679, 34.18053078651428, 35.18165707588196, 36.18221950531006, 37.18348550796509, 38.18428349494934, 39.18506407737732, 40.186625242233276, 41.1991662979126, 42.20044302940369, 43.20116090774536]
+Total      :   15.9G
+Available  :    7.8G
+Percent    :    50.6
+Used       :    8.0G
+Free       :    7.8G
+Length of overall cpu load = 44 
+Length of process cpu load = 44 
+Length of overall memo load = 44 
+Length of process memo load = 44 
+Length of time array = 44 
+Press ENTER to exit !constructor called
+***************** Processor info. **********    START
+python_version: 3.7.7.final.0 (64 bit)
+cpuinfo_version: [5, 0, 0]
+arch: X86_64
+bits: 64
+count: 8
+raw_arch_string: AMD64
+vendor_id: GenuineIntel
+brand: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+hz_advertised: 3.6000 GHz
+hz_actual: 3.6010 GHz
+hz_advertised_raw: [3600000000, 0]
+hz_actual_raw: [3601000000, 0]
+l2_cache_size: 1024 KB
+stepping: 3
+model: 60
+family: 6
+l3_cache_size: 8192 KB
+flags: ['3dnow', 'abm', 'acpi', 'aes', 'apic', 'avx', 'avx2', 'bmi1', 'bmi2', 'clflush', 'cmov', 'cx16', 'cx8', 'de', 'ds_cpl', 'dtes64', 'dts', 'erms', 'est', 'f16c', 'fma', 'fpu', 'fxsr', 'ht', 'ia64', 'invpcid', 'lahf_lm', 'mca', 'mce', 'mmx', 'monitor', 'movbe', 'msr', 'mtrr', 'osxsave', 'pae', 'pat', 'pbe', 'pcid', 'pclmulqdq', 'pdcm', 'pge', 'pni', 'popcnt', 'pse', 'pse36', 'rdrnd', 'sep', 'serial', 'smep', 'smx', 'ss', 'sse', 'sse2', 'sse4_1', 'sse4_2', 'ssse3', 'tm', 'tm2', 'tsc', 'tscdeadline', 'vme', 'vmx', 'x2apic', 'xsave', 'xtpr']
+l2_cache_line_size: 6
+l2_cache_associativity: 0x100
+extended_model: 3
+{'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
+****************Processor info. ***********    END
+x is **
+<generator object process_iter at 0x000001EB31E688C8>
+19612
+LoadStats constructor
+******************* Starting timer now for 11 seconds !, Press q to Exit *****************
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  235.0K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1012.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.0K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1012.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.6K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.6K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.6K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1012.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.6K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  233.6K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1004.0K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.9K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  460.9M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.8K
+Pagefile   :  460.9M
+Peak_pagefile :  484.6M
+Private    :  460.9M
+
+
+Rss        :  301.6M
+Vms        :  461.0M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.5K
+Pagefile   :  461.0M
+Peak_pagefile :  484.6M
+Private    :  461.0M
+
+
+Rss        :  301.6M
+Vms        :  461.0M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.5K
+Pagefile   :  461.0M
+Peak_pagefile :  484.6M
+Private    :  461.0M
+
+
+Rss        :  301.6M
+Vms        :  461.0M
+Num_page_faults :    2.1M
+Peak_wset  :  371.7M
+Wset       :  301.6M
+Peak_paged_pool :    1.0M
+Paged_pool : 1002.3K
+Peak_nonpaged_pool :    3.3M
+Nonpaged_pool :  234.5K
+Pagefile   :  461.0M
+Peak_pagefile :  484.6M
+Private    :  461.0M
+
+
+Rss        :  301.6M
+Vms        :  461.0M
+Num_page_faults :    2.1M

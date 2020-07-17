@@ -1,1 +1,3 @@
 Maybe at the end of compiling average stats also add actual memo consumption from the percentage and to a bytes2Human
+Subtract avg. load of the temp.exe itself from overall load
+
