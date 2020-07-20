@@ -122,8 +122,8 @@ class loadStats():
         p = psutil.Process(procObj.pid);
         
         start_time=time.time()
-        seconds=11;
-        print("******************* Starting timer now for %d" % seconds+" seconds !, Press q to Exit *****************")
+
+        print("******************* Started Logging CPU/Memo laods !!, Hold q to Exit *****************")
         procCpuArr=[]
         totCpuArr=[]
         procMemArr=[]
@@ -134,8 +134,8 @@ class loadStats():
             try:
                 if keyboard.is_pressed('q'):  # if key 'q' is pressed 
                    raise KeyboardInterrupt
-                current_time = time.time()
-                elapsed_time = current_time - start_time
+#                 current_time = time.time()
+#                 elapsed_time = current_time - start_time
     #             print(psutil.cpu_percent(interval=1,percpu=False))
                 timeArr.append(time.time()-start_time)
                 procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
@@ -144,9 +144,9 @@ class loadStats():
                 procMemArr.append(p.memory_percent(memtype='rss'))
 
                 totMemArr.append(psutil.virtual_memory().percent)
-                pprint_ntuple(p.memory_info())
+#                pprint_ntuple(p.memory_info())
                 #print(p.memory_full_info())
-                print("\n")
+#                print("\n")
                 #             if elapsed_time > seconds:
         
             #                 print("Finished iterating in: " + str(int(elapsed_time))  + " seconds")
@@ -187,15 +187,22 @@ print(x.pid)
 
 y=loadStats(x);
 z=y.getOverallCpuLoad(x)
+print("Overall CPU Load : ")
 print(z.overallCpu);
+print("NUIA CPU Load : ")
 print(z.procCpu);
+print("Overall Memo Load : ")
 print(z.overallMemo);
+print("NUIA Memo Load : ")
 print(z.procMemo)
+print("Time axis (in seconds) ")
 print(z.timeArr)
 pprint_ntuple(psutil.virtual_memory())
 
+print("\nAverage Overall CPU load %f"%np.mean(z.overallCpu))
+print("Average NUIA CPU load %f"%np.mean(z.procCpu))
 
-print("Length of overall cpu load = %d "%len(z.overallCpu)) 
+print("\nLength of overall cpu load = %d "%len(z.overallCpu)) 
 print("Length of process cpu load = %d "%len(z.procCpu)) 
 print("Length of overall memo load = %d "%len(z.overallMemo)) 
 print("Length of process memo load = %d "%len(z.procMemo)) 
@@ -208,10 +215,21 @@ print("Length of time array = %d "%len(z.timeArr))
 input("Press ENTER to show GRAPH !")
 plt.style.use('seaborn-whitegrid')
 
-plt.plot(z.timeArr, z.overallCpu, marker='o');
-plt.plot(z.timeArr, z.procCpu, marker='o');
+plt.plot(z.timeArr, z.overallCpu, marker='o',label='Overall CPU Load');
+plt.plot(z.timeArr, z.procCpu, marker='o',label='NUIA CPU Load');
+
+plt.plot(z.timeArr, z.overallMemo, marker='o',label='Overall Memory Consumption in %');
+plt.plot(z.timeArr, z.procMemo, marker='o',label='NUIA Memory Consumption %');
+
+plt.xlabel("Time (s)")
+plt.ylabel("CPU / Memo Load (%)")
+
+plt.legend()
+plt.savefig('my_figure.png')
 plt.show()
-plt.close('all')
+
+
+#plt.close('all')
 input("Press ENTER to exit !")
 sys.stdout.log.close()
 # sys.stdout.close()
