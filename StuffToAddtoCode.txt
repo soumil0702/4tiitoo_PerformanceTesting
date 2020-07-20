@@ -3,3 +3,5 @@ Maybe at the end of compiling average stats also add actual memo consumption fro
 Subtract avg. load of the temp.exe itself from overall load
 
 
+Bugs:
+1. Sometimes CPU load of NUIA > overall load?? (wtf) on sap machine in particular

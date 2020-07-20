@@ -138,8 +138,9 @@ class loadStats():
 #                 elapsed_time = current_time - start_time
     #             print(psutil.cpu_percent(interval=1,percpu=False))
                 timeArr.append(time.time()-start_time)
-                procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
-                totCpuArr.append(psutil.cpu_percent(interval=0.5,percpu=False))
+                totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
+                procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
+
 #                procMemArr.append((p.memory_info().rss))
                 procMemArr.append(p.memory_percent(memtype='rss'))
 
