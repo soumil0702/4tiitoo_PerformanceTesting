@@ -43,7 +43,7 @@ import matplotlib.pyplot as plt
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
-        self.log = open("logfile.log", "a")
+        self.log = open("logfile.log", "w")
 
     def write(self, message):
         pass
@@ -208,12 +208,12 @@ print("Length of time array = %d "%len(z.timeArr))
 input("Press ENTER to show GRAPH !")
 plt.style.use('seaborn-whitegrid')
 
-plt.scatter(z.timeArr, z.overallCpu, marker='o');
-plt.scatter(z.timeArr, z.procCpu, marker='o');
+plt.plot(z.timeArr, z.overallCpu, marker='o');
+plt.plot(z.timeArr, z.procCpu, marker='o');
 plt.show()
 plt.close('all')
 input("Press ENTER to exit !")
-
+sys.stdout.log.close()
 # sys.stdout.close()
 
 
