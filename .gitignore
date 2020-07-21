@@ -3,5 +3,5 @@ temp.build/
 tempnew.build/
 __pycache__/
 output/
-./tempnew.spec
+/tempnew.spec
  
