@@ -2,7 +2,7 @@
 
 block_cipher = None
 
-j
+
 a = Analysis(['tempnew.py'],
              pathex=['E:\\shared_bw_win7and10\\Eclipse_Testing\\test'],
              binaries=[],
