@@ -96,7 +96,7 @@ class processMonitor():
     def processor_info(self):
         #returns properties of cpu
         print("***************** Processor info. **********    START")
-
+#         multiprocessing.freeze_support()
         self.processor_details['arch']=get_cpu_info()['arch'];
         self.processor_details['logical_cores']=get_cpu_info()['count'];
         self.processor_details['gen']=get_cpu_info()['brand'];
@@ -245,7 +245,6 @@ sys.stdout.log.close()
 # Performance Metric: Something that involves cpu usage, memo usage, overall cpu spikes
 
 def GetProcessList():
-        import psutil
         Pids = psutil.pids();
        
         processList = []
@@ -276,7 +275,7 @@ def GetProcessList():
                 del(tmp)
             except:
                 continue;
-        import operator
+#        import operator
         processList = sorted(processList, key=lambda x : x['memory_percent'], reverse=True);
         processList = sorted(processList, key=lambda x : x['cpu_times'], reverse=True);
         return processList
