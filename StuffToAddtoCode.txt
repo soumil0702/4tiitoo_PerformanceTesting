@@ -1,9 +1,10 @@
 Show legend of plot, maybe the graph is showing values at the point of touching instead of showing small vals
 Maybe at the end of compiling average stats also add actual memo consumption from the percentage and to a bytes2Human
 Subtract avg. load of the temp.exe itself from overall load
+If the script takes ages to start disable Quick Edit mode from the cmd defaults
 
 
 Bugs:
 1. Sometimes CPU load of NUIA > overall load?? (wtf) on sap machine in particular
-2. The exe is taking ages to start (until i press enter sometimes it doesn't even start for 3 mins). could be due to multiproc command
-3. 
+2. The exe is taking ages to start (until i press enter sometimes it doesn't even start for 3 mins). could be due to multiproc command?
+3. See sometimes in SAP machine when i run the exe it shows an error saying unable to start script temp: Line 59 and 46

@@ -24,5 +24,33 @@ extended_model: 3
 {'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
 ****************Processor info. ***********    END
 x is **
-<generator object process_iter at 0x0000015052528948>
- NUIA is not running, start NUIA
+<generator object process_iter at 0x0000026E96BF89C8>
+11372
+LoadStats constructor
+******************* Started Logging CPU/Memo laods !!, Hold q to Exit *****************
+Exitting Program Now !!
+Overall CPU Load : 
+[8.9, 19.5]
+NUIA CPU Load : 
+[2.7375, 2.35]
+Overall Memo Load : 
+[56.2, 56.2]
+NUIA Memo Load : 
+[2.6297111085178733, 2.6297831428984426]
+Time axis (in seconds) 
+[0.16890287399291992, 1.1692795753479004]
+Total      :   15.9G
+Available  :    7.0G
+Percent    :    56.2
+Used       :    8.9G
+Free       :    7.0G
+
+Average Overall CPU load 14.200000
+Average NUIA CPU load 2.543750
+
+Length of overall cpu load = 2 
+Length of process cpu load = 2 
+Length of overall memo load = 2 
+Length of process memo load = 2 
+Length of time array = 2 
+Press ENTER to show GRAPH !Press ENTER to exit !
