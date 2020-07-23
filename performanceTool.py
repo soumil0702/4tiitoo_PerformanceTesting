@@ -19,6 +19,8 @@ from cpuinfo import get_cpu_info
 import time
 
 import multiprocessing
+import threading
+
 multiprocessing.freeze_support() #workaround because if you do a py to exe, this bit goes in an infinite loop
 
 
@@ -109,6 +111,27 @@ class processMonitor():
         #return memo utilitzation
         print("rrs")
        
+def a():
+    print("Function a is running at time: " + str(int(time.time())) + " seconds.")
+    x=1+2;
+    
+    
+def b():
+    print("Function b is running at time: " + str(int(time.time())) + " seconds.")
+    y=2+2;
+    z=3-4
+    for i in range(100):
+        z=z+1
+    
+def maketotCpuArray(p,totCpuArr):
+    totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
+                
+    return totCpuArr
+
+def makeprocCpuArray(p,procCpuArr):
+
+    procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
+    return procCpuArr
 
 class loadStats():    
     def __init__(self,procObj):
@@ -137,9 +160,20 @@ class loadStats():
 #                 current_time = time.time()
 #                 elapsed_time = current_time - start_time
     #             print(psutil.cpu_percent(interval=1,percpu=False))
+                print("\nohne threading")
+                b();
+                a();
+#               threading.Thread(target=a).start()#for checking threading
+#                threading.Thread(target=b).start()
+
                 timeArr.append(time.time()-start_time)
-                totCpuArr.append(psutil.cpu_percent(interval=0.5,percpu=False))
-                procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
+
+#                threading.Thread(target=print((psutil.cpu_percent(interval=None,percpu=True)))).start() 
+                threading.Thread(target=makeprocCpuArray,args=(p, procCpuArr)).start()
+                threading.Thread(target=maketotCpuArray,args=(p,totCpuArr)).start()
+                
+#                totCpuArr.append(psutil.cpu_percent(interval=None,percpu=False))
+#                procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
 
 #                procMemArr.append((p.memory_info().rss))
                 procMemArr.append(p.memory_percent(memtype='rss'))
@@ -187,7 +221,7 @@ x.find_procs_by_name()
 print(x.pid)
 
 y=loadStats(x);
-z=y.getAllLoad(x)
+z=y.getAllLoadStats(x)
 print("Overall CPU Load : ")
 print(z.overallCpu);
 print("NUIA CPU Load : ")
@@ -198,6 +232,7 @@ print("NUIA Memo Load : ")
 print(z.procMemo)
 print("Time axis (in seconds) ")
 print(z.timeArr)
+
 pprint_ntuple(psutil.virtual_memory())
 
 print("\nAverage Overall CPU load %f"%np.mean(z.overallCpu))

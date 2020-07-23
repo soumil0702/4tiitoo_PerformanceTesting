@@ -8,3 +8,5 @@ Bugs:
 1. Sometimes CPU load of NUIA > overall load?? (wtf) on sap machine in particular
 2. The exe is taking ages to start (until i press enter sometimes it doesn't even start for 3 mins). could be due to multiproc command?
 3. See sometimes in SAP machine when i run the exe it shows an error saying unable to start script temp: Line 59 and 46
+I think its not computing the cpu load when percpu is false correctly. mayeb verify with the results from per cpu=true and taking average
+Threading doesnt seem to work imho, maybe check sth else
