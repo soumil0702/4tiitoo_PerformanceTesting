@@ -244,44 +244,6 @@ sys.stdout.log.close()
 
 # Performance Metric: Something that involves cpu usage, memo usage, overall cpu spikes
 
-def GetProcessList():
-        Pids = psutil.pids();
-       
-        processList = []
-        for pid in Pids:
-            try:
-                tmp = {}
-                p = psutil.Process(pid);
-                if p.exe() == "": continue;
-               
-                tmp['name'] = p.name();                            
-                               
-                tmp['pid'] = pid;                                  
-                tmp['status'] = p.status();                        
-                tmp['user'] = p.username();                        
-                cputimes = p.cpu_times()    
-                if cputimes.user > 100:
-                    tmp['cpu_percent'] = p.cpu_percent(interval = 0.5);
-                else:
-                    tmp['cpu_percent'] = 0.0
-                tmp['cpu_times'] = cputimes.user                            
-                tmp['memory_percent'] = round(p.memory_percent(),3)          
-                pio = p.io_counters()
-                tmp['io_write_bytes'] = pio.write_bytes            
-                tmp['io_read_bytes'] = pio.read_bytes              
-                tmp['threads'] = p.num_threads()                    
-                processList.append(tmp);
-                del(p)
-                del(tmp)
-            except:
-                continue;
-#        import operator
-        processList = sorted(processList, key=lambda x : x['memory_percent'], reverse=True);
-        processList = sorted(processList, key=lambda x : x['cpu_times'], reverse=True);
-        return processList
-   
-#x=GetProcessList()
-#print(x)
 
 class generateGraph(): #generate graph from loadStatObj which has all the load stats, refer to the tanzeel bhatti docu
     def __init__(self,loadStatObj):
