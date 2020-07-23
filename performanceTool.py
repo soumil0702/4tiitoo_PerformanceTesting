@@ -118,7 +118,7 @@ class loadStats():
         self.procMemo=[];
         
         print("LoadStats constructor")   
-    def getOverallCpuLoad(self,procObj): #overall cpu load
+    def getAllLoadStats(self,procObj): #overall cpu load
         p = psutil.Process(procObj.pid);
         
         start_time=time.time()
@@ -187,7 +187,7 @@ x.find_procs_by_name()
 print(x.pid)
 
 y=loadStats(x);
-z=y.getOverallCpuLoad(x)
+z=y.getAllLoad(x)
 print("Overall CPU Load : ")
 print(z.overallCpu);
 print("NUIA CPU Load : ")
