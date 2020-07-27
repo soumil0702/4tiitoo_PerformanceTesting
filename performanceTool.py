@@ -20,6 +20,7 @@ import time
 
 import multiprocessing
 import threading
+from scipy.integrate._ivp.radau import TI
 
 multiprocessing.freeze_support() #workaround because if you do a py to exe, this bit goes in an infinite loop
 
@@ -125,14 +126,13 @@ def b():
     
 def maketotCpuArray(p,totCpuArr):
     totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
-                
-    return totCpuArr
+
+#    return totCpuArr
 
 def makeprocCpuArray(p,procCpuArr):
 
     procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
-    return procCpuArr
-
+    
 class loadStats():    
     def __init__(self,procObj):
         self.overallMemo=[];
@@ -168,10 +168,11 @@ class loadStats():
 
                 timeArr.append(time.time()-start_time)
 
-#                threading.Thread(target=print((psutil.cpu_percent(interval=None,percpu=True)))).start() 
+#                threading.Thread(target=print((psutil.cpu_percent(interval=None,percpu=True)))).start()
+                time.sleep(0.25) 
                 threading.Thread(target=makeprocCpuArray,args=(p, procCpuArr)).start()
                 threading.Thread(target=maketotCpuArray,args=(p,totCpuArr)).start()
-                
+#                 time.sleep(0.25)
 #                totCpuArr.append(psutil.cpu_percent(interval=None,percpu=False))
 #                procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
 

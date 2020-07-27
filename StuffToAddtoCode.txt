@@ -10,3 +10,6 @@ Bugs:
 3. See sometimes in SAP machine when i run the exe it shows an error saying unable to start script temp: Line 59 and 46
 I think its not computing the cpu load when percpu is false correctly. mayeb verify with the results from per cpu=true and taking average
 Threading doesnt seem to work imho, maybe check sth else
+
+Update on threading: now its working pretty fast actually....why (despite the 1s interval) ???
+
