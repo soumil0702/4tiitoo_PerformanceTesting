@@ -12,4 +12,7 @@ I think its not computing the cpu load when percpu is false correctly. mayeb ver
 Threading doesnt seem to work imho, maybe check sth else
 
 Update on threading: now its working pretty fast actually....why (despite the 1s interval) ???
+Ans. I added the join method because this makes the length of all arrays equal. for some reason.....see if wpr also has 0 cpu load at 
+some samples, and also compare it with without the join() method to see if things change (for this youll have to uncomment the time.sleep func
+and comment the join lines, and make the intervals of the two cpu funcs to 1
 

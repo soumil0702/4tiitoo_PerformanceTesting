@@ -125,13 +125,13 @@ def b():
         z=z+1
     
 def maketotCpuArray(p,totCpuArr):
-    totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
+    totCpuArr.append(psutil.cpu_percent(interval=0.5,percpu=False))
 
 #    return totCpuArr
 
 def makeprocCpuArray(p,procCpuArr):
 
-    procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
+    procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
     
 class loadStats():    
     def __init__(self,procObj):
@@ -169,10 +169,15 @@ class loadStats():
                 timeArr.append(time.time()-start_time)
 
 #                threading.Thread(target=print((psutil.cpu_percent(interval=None,percpu=True)))).start()
-                time.sleep(0.25) 
-                threading.Thread(target=makeprocCpuArray,args=(p, procCpuArr)).start()
-                threading.Thread(target=maketotCpuArray,args=(p,totCpuArr)).start()
-#                 time.sleep(0.25)
+#                 time.sleep(0.25) 
+                p1 = threading.Thread(target=makeprocCpuArray,args=(p, procCpuArr))
+                p1.start()
+                p2 = threading.Thread(target=maketotCpuArray,args=(p,totCpuArr))
+                p2.start()
+                p1.join()
+                p2.join()
+#                threading.Thread(target=makeprocCpuArray,args=(p, procCpuArr)).start()
+#                threading.Thread(target=maketotCpuArray,args=(p,totCpuArr)).start()
 #                totCpuArr.append(psutil.cpu_percent(interval=None,percpu=False))
 #                procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
 
