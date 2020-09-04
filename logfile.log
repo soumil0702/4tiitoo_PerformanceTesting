@@ -24,185 +24,33 @@ extended_model: 3
 {'arch': 'X86_64', 'logical_cores': 8, 'gen': 'Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz'}
 ****************Processor info. ***********    END
 x is **
-<generator object process_iter at 0x00000229AFAE8048>
-21296
+<generator object process_iter at 0x000002285FD86AC8>
+14128
 LoadStats constructor
-******************* Started Logging CPU/Memo laods !!, Hold q to Exit *****************
-
-ohne threading
-Function b is running at time: 1595957228 seconds.
-Function a is running at time: 1595957228 seconds.
-
-ohne threading
-Function b is running at time: 1595957229 seconds.
-Function a is running at time: 1595957229 seconds.
-
-ohne threading
-Function b is running at time: 1595957229 seconds.
-Function a is running at time: 1595957229 seconds.
-
-ohne threading
-Function b is running at time: 1595957230 seconds.
-Function a is running at time: 1595957230 seconds.
-
-ohne threading
-Function b is running at time: 1595957230 seconds.
-Function a is running at time: 1595957230 seconds.
-
-ohne threading
-Function b is running at time: 1595957231 seconds.
-Function a is running at time: 1595957231 seconds.
-
-ohne threading
-Function b is running at time: 1595957231 seconds.
-Function a is running at time: 1595957231 seconds.
-
-ohne threading
-Function b is running at time: 1595957232 seconds.
-Function a is running at time: 1595957232 seconds.
-
-ohne threading
-Function b is running at time: 1595957232 seconds.
-Function a is running at time: 1595957232 seconds.
-
-ohne threading
-Function b is running at time: 1595957233 seconds.
-Function a is running at time: 1595957233 seconds.
-
-ohne threading
-Function b is running at time: 1595957233 seconds.
-Function a is running at time: 1595957233 seconds.
-
-ohne threading
-Function b is running at time: 1595957234 seconds.
-Function a is running at time: 1595957234 seconds.
-
-ohne threading
-Function b is running at time: 1595957234 seconds.
-Function a is running at time: 1595957234 seconds.
-
-ohne threading
-Function b is running at time: 1595957235 seconds.
-Function a is running at time: 1595957235 seconds.
-
-ohne threading
-Function b is running at time: 1595957235 seconds.
-Function a is running at time: 1595957235 seconds.
-
-ohne threading
-Function b is running at time: 1595957236 seconds.
-Function a is running at time: 1595957236 seconds.
-
-ohne threading
-Function b is running at time: 1595957236 seconds.
-Function a is running at time: 1595957236 seconds.
-
-ohne threading
-Function b is running at time: 1595957237 seconds.
-Function a is running at time: 1595957237 seconds.
-
-ohne threading
-Function b is running at time: 1595957237 seconds.
-Function a is running at time: 1595957237 seconds.
-
-ohne threading
-Function b is running at time: 1595957238 seconds.
-Function a is running at time: 1595957238 seconds.
-
-ohne threading
-Function b is running at time: 1595957238 seconds.
-Function a is running at time: 1595957238 seconds.
-
-ohne threading
-Function b is running at time: 1595957239 seconds.
-Function a is running at time: 1595957239 seconds.
-
-ohne threading
-Function b is running at time: 1595957239 seconds.
-Function a is running at time: 1595957239 seconds.
-
-ohne threading
-Function b is running at time: 1595957240 seconds.
-Function a is running at time: 1595957240 seconds.
-
-ohne threading
-Function b is running at time: 1595957240 seconds.
-Function a is running at time: 1595957240 seconds.
-
-ohne threading
-Function b is running at time: 1595957241 seconds.
-Function a is running at time: 1595957241 seconds.
-
-ohne threading
-Function b is running at time: 1595957241 seconds.
-Function a is running at time: 1595957241 seconds.
-
-ohne threading
-Function b is running at time: 1595957242 seconds.
-Function a is running at time: 1595957242 seconds.
-
-ohne threading
-Function b is running at time: 1595957242 seconds.
-Function a is running at time: 1595957242 seconds.
-
-ohne threading
-Function b is running at time: 1595957243 seconds.
-Function a is running at time: 1595957243 seconds.
-
-ohne threading
-Function b is running at time: 1595957243 seconds.
-Function a is running at time: 1595957243 seconds.
-
-ohne threading
-Function b is running at time: 1595957244 seconds.
-Function a is running at time: 1595957244 seconds.
-
-ohne threading
-Function b is running at time: 1595957244 seconds.
-Function a is running at time: 1595957244 seconds.
-
-ohne threading
-Function b is running at time: 1595957245 seconds.
-Function a is running at time: 1595957245 seconds.
-
-ohne threading
-Function b is running at time: 1595957245 seconds.
-Function a is running at time: 1595957245 seconds.
-
-ohne threading
-Function b is running at time: 1595957246 seconds.
-Function a is running at time: 1595957246 seconds.
-
-ohne threading
-Function b is running at time: 1595957246 seconds.
-Function a is running at time: 1595957246 seconds.
-
-ohne threading
-Function b is running at time: 1595957247 seconds.
-Function a is running at time: 1595957247 seconds.
+******************* Started Logging CPU/Memo loads !!, Hold q to Exit *****************
 Exitting Program Now !!
-Overall CPU Load : 
-[12.5, 10.9, 10.2, 7.4, 10.2, 2.0, 11.3, 6.6, 9.8, 5.9, 14.4, 10.5, 10.9, 11.3, 9.8, 10.3, 12.5, 8.7, 10.5, 10.6, 13.2, 13.6, 13.7, 11.7, 7.0, 11.7, 6.2, 8.2, 5.9, 7.8, 5.1, 11.3, 4.7, 9.4, 4.3, 10.6, 14.2, 30.9]
-NUIA CPU Load : 
-[1.95, 1.5625, 1.175, 0.775, 1.175, 0.0, 1.175, 1.1375, 1.175, 0.0, 1.175, 1.5625, 1.5625, 3.125, 0.3875, 1.8875, 1.175, 1.175, 0.775, 1.95, 0.0, 3.5125, 0.3875, 1.175, 0.375, 1.95, 0.0, 1.5625, 0.0, 1.175, 0.0, 1.5625, 0.0, 1.5625, 0.3875, 3.125, 2.35, 5.475]
-Overall Memo Load : 
-[60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5, 60.5]
-NUIA Memo Load : 
-[2.4886918028236518, 2.4887158142838413, 2.4887158142838413, 2.4887158142838413, 2.4887158142838413, 2.4887158142838413, 2.4887158142838413, 2.488739825744031, 2.488739825744031, 2.488739825744031, 2.488763837204221, 2.488763837204221, 2.4887878486644106, 2.493878278224631, 2.493902289684821, 2.4939263011450103, 2.4939263011450103, 2.4939263011450103, 2.4939263011450103, 2.4939503126052, 2.4939503126052, 2.49397432406539, 2.4939983355255797, 2.4939983355255797, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.4940223469857696, 2.494046358445959, 2.494046358445959, 2.4940703699061486]
+Overall CPU Load in %: 
+[11.5, 2.9, 3.1, 22.4, 20.7, 32.4, 28.5, 30.7, 30.5, 25.0, 22.3, 22.5, 56.3, 49.9, 16.1, 7.2, 10.2, 11.3, 11.7, 11.3, 10.3, 9.0, 5.5]
+NUIA CPU Load in %: 
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.175, 1.3625, 0.975, 0.975, 1.175, 2.8875, 12.875, 3.65, 0.775, 0.975, 0.5875, 0.975, 0.9625, 0.975, 0.775, 0.775]
+Overall Memo Load in %: 
+[56.0, 56.0, 56.0, 56.1, 56.2, 56.4, 56.8, 57.2, 57.6, 57.8, 58.2, 58.4, 58.6, 57.6, 57.6, 57.6, 57.6, 57.6, 57.7, 57.7, 57.7, 57.7, 57.7]
+NUIA Memo Load in %: 
+[0.10761936457032212, 0.10761936457032212, 0.10761936457032212, 0.10761936457032212, 0.10761936457032212, 0.10761936457032212, 0.10761936457032212, 0.11386234421964915, 0.1123256107675071, 0.1123256107675071, 0.11535105475141176, 0.1155191349727398, 0.1162875016988108, 0.12795707135101442, 0.11842452165569584, 0.1195050373642332, 0.11890475085949022, 0.11984119780688927, 0.11640755899975941, 0.119865209267079, 0.11640755899975941, 0.12065758745333974, 0.11734400594715845]
 Time axis (in seconds) 
-[0.13957691192626953, 0.6415925025939941, 1.143303394317627, 1.6445157527923584, 2.1458253860473633, 2.6480212211608887, 3.150141477584839, 3.651744842529297, 4.153802156448364, 4.655665874481201, 5.157310724258423, 5.65888786315918, 6.160551309585571, 6.662499189376831, 7.164597034454346, 7.666211128234863, 8.168065547943115, 8.66956639289856, 9.171292304992676, 9.672797918319702, 10.17484998703003, 10.67666745185852, 11.178329944610596, 11.680665016174316, 12.18271255493164, 12.683716058731079, 13.185788869857788, 13.687731981277466, 14.189248085021973, 14.69084620475769, 15.192588090896606, 15.694804668426514, 16.19657063484192, 16.698777437210083, 17.20079469680786, 17.702405214309692, 18.204437255859375, 18.706512928009033]
+[0.15191173553466797, 1.1637260913848877, 2.175447463989258, 3.1865572929382324, 4.197278022766113, 5.2081685066223145, 6.220556735992432, 7.236974239349365, 8.247936010360718, 9.263160228729248, 10.276618242263794, 11.290109872817993, 12.30301547050476, 13.318433046340942, 14.333447694778442, 15.347492933273315, 16.361499071121216, 17.373525142669678, 18.38578510284424, 19.397513151168823, 20.407890558242798, 21.420515775680542, 22.433539152145386]
 Total      :   15.9G
-Available  :    6.3G
-Percent    :    60.5
-Used       :    9.6G
-Free       :    6.3G
+Available  :    6.7G
+Percent    :    57.7
+Used       :    9.2G
+Free       :    6.7G
 
-Average Overall CPU load 10.152632
-Average NUIA CPU load 1.302632
+Average Overall CPU load 19.621739 %
+Average NUIA CPU load 1.385870 %
 
-Length of overall cpu load = 38 
-Length of process cpu load = 38 
-Length of overall memo load = 38 
-Length of process memo load = 38 
-Length of time array = 38 
-Press ENTER to show GRAPH !Press ENTER to exit !
+Length of overall cpu load = 23 
+Length of process cpu load = 23 
+Length of overall memo load = 23 
+Length of process memo load = 23 
+Length of time array = 23 
+Plotting graphs now!! ************ Exporting console log to 'logfile.log' ***********

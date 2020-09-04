@@ -20,7 +20,7 @@ import time
 
 import multiprocessing
 import threading
-from scipy.integrate._ivp.radau import TI
+#from scipy.integrate._ivp.radau import TI
 
 multiprocessing.freeze_support() #workaround because if you do a py to exe, this bit goes in an infinite loop
 
@@ -93,8 +93,8 @@ class processMonitor():
                 
         try: self.pid=ls[0].pid
         except:
-             print(' NUIA is not running, start NUIA')
-             sys.exit()
+            print(' NUIA is not running, start NUIA')
+            sys.exit()
     
     def processor_info(self):
         #returns properties of cpu
@@ -111,27 +111,15 @@ class processMonitor():
     def memo_util(self):  
         #return memo utilitzation
         print("rrs")
-       
-def a():
-    print("Function a is running at time: " + str(int(time.time())) + " seconds.")
-    x=1+2;
-    
-    
-def b():
-    print("Function b is running at time: " + str(int(time.time())) + " seconds.")
-    y=2+2;
-    z=3-4
-    for i in range(100):
-        z=z+1
-    
+
 def maketotCpuArray(p,totCpuArr):
-    totCpuArr.append(psutil.cpu_percent(interval=0.5,percpu=False))
+    totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
 
 #    return totCpuArr
 
 def makeprocCpuArray(p,procCpuArr):
 
-    procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
+    procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
     
 class loadStats():    
     def __init__(self,procObj):
@@ -146,7 +134,7 @@ class loadStats():
         
         start_time=time.time()
 
-        print("******************* Started Logging CPU/Memo laods !!, Hold q to Exit *****************")
+        print("******************* Started Logging CPU/Memo loads !!, Hold q to Exit *****************")
         procCpuArr=[]
         totCpuArr=[]
         procMemArr=[]
@@ -156,28 +144,24 @@ class loadStats():
     
             try:
                 if keyboard.is_pressed('q'):  # if key 'q' is pressed 
-                   raise KeyboardInterrupt
+                    raise KeyboardInterrupt
 #                 current_time = time.time()
 #                 elapsed_time = current_time - start_time
     #             print(psutil.cpu_percent(interval=1,percpu=False))
-                print("\nohne threading")
-                b();
-                a();
+
 #               threading.Thread(target=a).start()#for checking threading
 #                threading.Thread(target=b).start()
 
                 timeArr.append(time.time()-start_time)
 
 #                threading.Thread(target=print((psutil.cpu_percent(interval=None,percpu=True)))).start()
-#                 time.sleep(0.25) 
+#                 time.sleep(0.5) 
                 p1 = threading.Thread(target=makeprocCpuArray,args=(p, procCpuArr))
                 p1.start()
                 p2 = threading.Thread(target=maketotCpuArray,args=(p,totCpuArr))
                 p2.start()
                 p1.join()
                 p2.join()
-#                threading.Thread(target=makeprocCpuArray,args=(p, procCpuArr)).start()
-#                threading.Thread(target=maketotCpuArray,args=(p,totCpuArr)).start()
 #                totCpuArr.append(psutil.cpu_percent(interval=None,percpu=False))
 #                procCpuArr.append(p.cpu_percent(interval=0.5)/psutil.cpu_count())
 
@@ -196,9 +180,9 @@ class loadStats():
             except KeyboardInterrupt:
                 print('Exitting Program Now !!')
                 break;
-#            except: #catchall exception
-#                print("Program not running anymore or exitted prematurely ! ")
-#                break;
+            except: #catchall exception
+                print("Program not running anymore or exitted prematurely ! ")
+                break;
     #         raise KeyboardInterrupt 
     #        print("keyboard CAUGHT!!!")
         #for Item in procCpuArr: print(Item.rjust(8), sep='/n')
@@ -228,21 +212,21 @@ print(x.pid)
 
 y=loadStats(x);
 z=y.getAllLoadStats(x)
-print("Overall CPU Load : ")
+print("Overall CPU Load in %: ")
 print(z.overallCpu);
-print("NUIA CPU Load : ")
+print("NUIA CPU Load in %: ")
 print(z.procCpu);
-print("Overall Memo Load : ")
+print("Overall Memo Load in %: ")
 print(z.overallMemo);
-print("NUIA Memo Load : ")
+print("NUIA Memo Load in %: ")
 print(z.procMemo)
 print("Time axis (in seconds) ")
 print(z.timeArr)
 
 pprint_ntuple(psutil.virtual_memory())
 
-print("\nAverage Overall CPU load %f"%np.mean(z.overallCpu))
-print("Average NUIA CPU load %f"%np.mean(z.procCpu))
+print("\nAverage Overall CPU load %f %%"%np.mean(z.overallCpu))
+print("Average NUIA CPU load %f %%"%np.mean(z.procCpu))
 
 print("\nLength of overall cpu load = %d "%len(z.overallCpu)) 
 print("Length of process cpu load = %d "%len(z.procCpu)) 
@@ -254,11 +238,12 @@ print("Length of time array = %d "%len(z.timeArr))
 # print(t)
 
 
-input("Press ENTER to show GRAPH !")
+#input("Press ENTER to show GRAPH !")
+print("Plotting graphs now!! ************ Exporting console log to 'logfile.log' ***********")
 plt.style.use('seaborn-whitegrid')
 
-plt.plot(z.timeArr, z.overallCpu, marker='o',label='Overall CPU Load');
-plt.plot(z.timeArr, z.procCpu, marker='o',label='NUIA CPU Load');
+plt.plot(z.timeArr, z.overallCpu, marker='o',label='Overall CPU Load in %');
+plt.plot(z.timeArr, z.procCpu, marker='o',label='NUIA CPU Load in %');
 
 plt.plot(z.timeArr, z.overallMemo, marker='o',label='Overall Memory Consumption in %');
 plt.plot(z.timeArr, z.procMemo, marker='o',label='NUIA Memory Consumption %');
@@ -272,18 +257,10 @@ plt.show()
 
 
 #plt.close('all')
-input("Press ENTER to exit !")
+#input("Press ENTER to exit !")
 sys.stdout.log.close()
 # sys.stdout.close()
 
-
-
-
-# print(psutil.process_iter(attrs, ad_value))
-# print(x.cpu_nums);
-# print(x.memo)
-
-# Performance Metric: Something that involves cpu usage, memo usage, overall cpu spikes
 
 
 class generateGraph(): #generate graph from loadStatObj which has all the load stats, refer to the tanzeel bhatti docu
