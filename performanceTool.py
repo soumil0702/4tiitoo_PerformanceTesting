@@ -9,7 +9,7 @@
 #Bugs
 #If NUIA ain't open you'll get an error in 
 import sys
-
+import pickle
 import keyboard
 
 import psutil
@@ -20,6 +20,7 @@ import time
 
 import multiprocessing
 import threading
+from prompt_toolkit import input
 #from scipy.integrate._ivp.radau import TI
 
 multiprocessing.freeze_support() #workaround because if you do a py to exe, this bit goes in an infinite loop
@@ -97,7 +98,7 @@ class processMonitor():
             sys.exit()
     
     def processor_info(self):
-        #returns properties of cpu
+        #retyurns properties of cpu
         print("***************** Processor info. **********    START")
 #         multiprocessing.freeze_support()
         self.processor_details['arch']=get_cpu_info()['arch'];
@@ -116,7 +117,6 @@ def maketotCpuArray(p,totCpuArr):
     totCpuArr.append(psutil.cpu_percent(interval=1,percpu=False))
 
 #    return totCpuArr
-
 def makeprocCpuArray(p,procCpuArr):
 
     procCpuArr.append(p.cpu_percent(interval=1)/psutil.cpu_count())
@@ -203,66 +203,77 @@ class loadStats():
 #         return 1;
     # class graphGen():
     #         def __init__(self):
+
+def showInteractive():
+     fig = pickle.load(open('newplot.pickle', 'rb'))
+     #see here for more info https://www.david.science/py-pickle-plot.html
+#     ax.set_ylabel('Voltage (mV)')
+#     ax.minorticks_on()
+#     ax.legend()
+     plt.show()
            
+if __name__ == '__main__':
+    showInteractive()
+    sys.exit()
+    x=processMonitor('NUIA.exe')
+    x.processor_info() #this line causes problems while converint to exe for some reason
+    x.find_procs_by_name()
+    print(x.pid)
+    
+    y=loadStats(x);
+    z=y.getAllLoadStats(x)
+    print("Overall CPU Load in %: ")
+    print(z.overallCpu);
+    print("NUIA CPU Load in %: ")
+    print(z.procCpu);
+    print("Overall Memo Load in %: ")
+    print(z.overallMemo);
+    print("NUIA Memo Load in %: ")
+    print(z.procMemo)
+    print("Time axis (in seconds) ")
+    print(z.timeArr)
+    
+    pprint_ntuple(psutil.virtual_memory()) # REmove this line and at the top write the Total memo available  
+    
+    print("Average Overall Memo load %f %%"%np.mean(z.overallMemo))
+    print("Average NUIA Memo load %f %%"%np.mean(z.procMemo))
+    print("\nAverage Overall CPU load %f %%"%np.mean(z.overallCpu))
+    print("Average NUIA CPU load %f %%"%np.mean(z.procCpu))
+    
+    print("\nLength of overall cpu load = %d "%len(z.overallCpu)) 
+    print("Length of process cpu load = %d "%len(z.procCpu)) 
+    print("Length of overall memo load = %d "%len(z.overallMemo)) 
+    print("Length of process memo load = %d "%len(z.procMemo)) 
+    print("Length of time array = %d "%len(z.timeArr)) 
+    
+    # t=getOverallCpuLoad(x)
+    # print(t)
+    
+    
+    #input("Press ENTER to show GRAPH !")
+    print("Plotting graphs now!! ************ Exporting console log to 'logfile.log' ***********")
+    plt.style.use('seaborn-whitegrid')
+    
+    fig1=plt.plot(z.timeArr, z.overallCpu, marker='o',label='Overall CPU Load in %');
+    fig2=plt.plot(z.timeArr, z.procCpu, marker='o',label='NUIA CPU Load in %');
+    
+    fig3=plt.plot(z.timeArr, z.overallMemo, marker='o',label='Overall Memory Consumption in %');
+    fig4=plt.plot(z.timeArr, z.procMemo, marker='o',label='NUIA Memory Consumption %');
+    
+    plt.xlabel("Time (s)")
+    plt.ylabel("CPU / Memo Load (%)")
+    
+    plt.legend()
+    plt.savefig('my_figure.png')
+    plt.show()
+
+    pickle.dump((fig1), open('newplot.pickle', 'wb'))
+
+    sys.stdout.log.close()
+    # sys.stdout.close()
+
    
-x=processMonitor('NUIA.exe')
-x.processor_info() #this line causes problems while converint to exe for some reason
-x.find_procs_by_name()
-print(x.pid)
-
-y=loadStats(x);
-z=y.getAllLoadStats(x)
-print("Overall CPU Load in %: ")
-print(z.overallCpu);
-print("NUIA CPU Load in %: ")
-print(z.procCpu);
-print("Overall Memo Load in %: ")
-print(z.overallMemo);
-print("NUIA Memo Load in %: ")
-print(z.procMemo)
-print("Time axis (in seconds) ")
-print(z.timeArr)
-
-pprint_ntuple(psutil.virtual_memory())
-
-print("\nAverage Overall CPU load %f %%"%np.mean(z.overallCpu))
-print("Average NUIA CPU load %f %%"%np.mean(z.procCpu))
-
-print("\nLength of overall cpu load = %d "%len(z.overallCpu)) 
-print("Length of process cpu load = %d "%len(z.procCpu)) 
-print("Length of overall memo load = %d "%len(z.overallMemo)) 
-print("Length of process memo load = %d "%len(z.procMemo)) 
-print("Length of time array = %d "%len(z.timeArr)) 
-
-# t=getOverallCpuLoad(x)
-# print(t)
-
-
-#input("Press ENTER to show GRAPH !")
-print("Plotting graphs now!! ************ Exporting console log to 'logfile.log' ***********")
-plt.style.use('seaborn-whitegrid')
-
-plt.plot(z.timeArr, z.overallCpu, marker='o',label='Overall CPU Load in %');
-plt.plot(z.timeArr, z.procCpu, marker='o',label='NUIA CPU Load in %');
-
-plt.plot(z.timeArr, z.overallMemo, marker='o',label='Overall Memory Consumption in %');
-plt.plot(z.timeArr, z.procMemo, marker='o',label='NUIA Memory Consumption %');
-
-plt.xlabel("Time (s)")
-plt.ylabel("CPU / Memo Load (%)")
-
-plt.legend()
-plt.savefig('my_figure.png')
-plt.show()
-
-
-#plt.close('all')
-#input("Press ENTER to exit !")
-sys.stdout.log.close()
-# sys.stdout.close()
-
-
-
+    
 class generateGraph(): #generate graph from loadStatObj which has all the load stats, refer to the tanzeel bhatti docu
     def __init__(self,loadStatObj):
         return 1
@@ -271,3 +282,6 @@ class generateGraph(): #generate graph from loadStatObj which has all the load s
 def generateReport(loadStatObj):# generate report of loadstats of the machine, give a rating at the end
     
     return 999 # return a beautified load table with overall and proc. loads
+
+
+    
