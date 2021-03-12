@@ -6,7 +6,7 @@ Created on 12.03.2021
 
 import pickle
 import matplotlib.pyplot as plt
-
+import utils
 def showInteractive(file): #show graph as matplotlib interactive object
     
      fig = pickle.load(open(file, 'rb'))
@@ -15,5 +15,4 @@ def showInteractive(file): #show graph as matplotlib interactive object
 #     ax.minorticks_on()
 #     ax.legend()
      plt.show()
-     
      
