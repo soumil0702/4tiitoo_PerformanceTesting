@@ -204,17 +204,9 @@ class loadStats():
     # class graphGen():
     #         def __init__(self):
 
-def showInteractive():
-     fig = pickle.load(open('newplot.pickle', 'rb'))
-     #see here for more info https://www.david.science/py-pickle-plot.html
-#     ax.set_ylabel('Voltage (mV)')
-#     ax.minorticks_on()
-#     ax.legend()
-     plt.show()
+
            
 if __name__ == '__main__':
-   #showInteractive()
-#    sys.exit()
     x=processMonitor('NUIA.exe')
     x.processor_info() #this line causes problems while converint to exe for some reason
     x.find_procs_by_name()
