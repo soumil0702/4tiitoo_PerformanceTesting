@@ -213,8 +213,8 @@ def showInteractive():
      plt.show()
            
 if __name__ == '__main__':
-    showInteractive()
-    sys.exit()
+   #showInteractive()
+#    sys.exit()
     x=processMonitor('NUIA.exe')
     x.processor_info() #this line causes problems while converint to exe for some reason
     x.find_procs_by_name()
@@ -264,10 +264,10 @@ if __name__ == '__main__':
     plt.ylabel("CPU / Memo Load (%)")
     
     plt.legend()
-    plt.savefig('my_figure.png')
-    plt.show()
-
+    plt.savefig('my_figure.svg')
+    
     pickle.dump((fig1), open('newplot.pickle', 'wb'))
+    plt.show()
 
     sys.stdout.log.close()
     # sys.stdout.close()
