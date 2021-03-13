@@ -1,3 +1,7 @@
+Urgent:
+1. Improve exception handling when NUIA crashes/closes for example.....program quits abrubtly because cant plot due to differences in dimensions
+
+
 Show legend of plot, maybe the graph is showing values at the point of touching instead of showing small vals
 Maybe at the end of compiling average stats also add actual memo consumption from the percentage and to a bytes2Human
 Subtract avg. load of the temp.exe itself from overall load
