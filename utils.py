@@ -20,3 +20,12 @@ def showInteractivePlot(): #show graph as matplotlib interactive object
          print("No such file found...Exitting!")
          return
     
+class generateGraph(): #generate graph from loadStatObj which has all the load stats, refer to the tanzeel bhatti docu
+    def __init__(self,loadStatObj):
+        return 1
+        
+    
+def generateReport(loadStatObj):# generate report of loadstats of the machine, give a rating at the end
+    
+    return 999 # return a beautified load table with overall and proc. loads
+

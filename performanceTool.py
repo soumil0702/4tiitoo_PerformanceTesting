@@ -209,6 +209,12 @@ class loadStats():
 if __name__ == '__main__':
     x=processMonitor('NUIA.exe')
     x.processor_info() #this line causes problems while converint to exe for some reason
+
+    print("\n************* RAM Info ********** START")
+    pprint_ntuple(psutil.virtual_memory()) # REmove this line and at the top write the Total memo available  
+#   print("\nTotal Memory Available = "+ bytes2human(psutil.virtual_memory().total))
+    print("\n************* RAM Info ********** END")
+
     x.find_procs_by_name()
     print(x.pid)
     
@@ -224,9 +230,7 @@ if __name__ == '__main__':
     print(z.procMemo)
     print("Time axis (in seconds) ")
     print(z.timeArr)
-    
-    pprint_ntuple(psutil.virtual_memory()) # REmove this line and at the top write the Total memo available  
-    
+      
     print("Average Overall Memo load %f %%"%np.mean(z.overallMemo))
     print("Average NUIA Memo load %f %%"%np.mean(z.procMemo))
     print("\nAverage Overall CPU load %f %%"%np.mean(z.overallCpu))
@@ -266,14 +270,5 @@ if __name__ == '__main__':
 
    
     
-class generateGraph(): #generate graph from loadStatObj which has all the load stats, refer to the tanzeel bhatti docu
-    def __init__(self,loadStatObj):
-        return 1
-        
-    
-def generateReport(loadStatObj):# generate report of loadstats of the machine, give a rating at the end
-    
-    return 999 # return a beautified load table with overall and proc. loads
-
 
     
